@@ -18,6 +18,13 @@ user ALL=(ALL:ALL) ALL
 ```
 enregistrez le fichier puis tapez `exit` pour sortir du mode root
 
+## Curl et Git
+
+Installez les packages suivants :
+```bash
+sudo apt-get install curl git
+```
+
 ## Vim
 Création d'un fichier `.vimrc` :
 ```bash
@@ -38,7 +45,57 @@ sudo service ssh restart
 
 ### Utiliser une clé ssh
 
+## ZSH
 
+Installation du package :
+```bash
+sudo apt-get install zsh
+```
 
+Une fois l'installation terminé taper la commande `zsh`
+Appuyer sur `2` pour créer le fichier de configuration par défaut
 
+### installation de oh-my-zsh
+[Github de oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
+Entrez la commande suivante :
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+Entrez votre mot de passe utilisateur quand on vous le demandera
+
+### Thème pure
+[Github du thème pure](https://github.com/sindresorhus/pure)
+*ATTENTION: Ce thème à besoin d'une font particulière de base*
+
+Clonez le dépot du thème pure et copiez-y les fichiers :
+```bash
+git clone https://github.com/sindresorhus/pure.git
+
+cp pure/pure.plugin.zsh .oh-my-zsh/themes/pure.zsh-theme
+cp pure/async.zsh .oh-my-zsh/custom/async.zsh
+```
+Modifier votre fichier `.zshrc` en remplaçant le **ZSH_THEME=** :
+```bash
+ZSH_THEME="pure"
+```
+Une fois finis faite ceci pour reload la configuration :
+```bash
+source .zshrc
+```
+
+### Plugin zsh-syntax-highlighting
+[Github du plugin](https://github.com/zsh-users/zsh-syntax-highlighting)
+
+Installer le plugin dans oh-my-zsh comme ceci :
+```bash
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+Modifier votre fichier `.zshrc` et ajouter le plugin:
+```bash
+plugin=([plugins...] zsh-syntax-highlighting)
+```
+Une fois finis faite ceci pour reload la configuration :
+```bash
+source .zshrc
+```
