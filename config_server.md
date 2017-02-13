@@ -1,5 +1,14 @@
+# Sommaire
+
+ 1. [Gestion des droits](https://github.com/Helixar95/doc/blob/master/config_server.md#gestions-des-droits)
+ 2. [Curl et Git](https://github.com/Helixar95/doc/blob/master/config_server.md#curl-et-git)
+ 3. [Vim](https://github.com/Helixar95/doc/blob/master/config_server.md#vim)
+ 4. [SSH](https://github.com/Helixar95/doc/blob/master/config_server.md#ssh)
+ 5. [ZSH](https://github.com/Helixar95/doc/blob/master/config_server.md#zsh)
+ 6. [thème Arc (not doing)](https://github.com/Helixar95/doc/blob/master/config_server.md#zsh)
+
 # Configuration du serveur
-## Gestions des droits
+## 1 - Gestions des droits
 Passez en root avec la commande `su` puis tapez votre mot de passe root.
 ensuite mettez les dépendances à jour :
  `apt-get update && apt-get upgrade`
@@ -18,14 +27,14 @@ user ALL=(ALL:ALL) ALL
 ```
 enregistrez le fichier puis tapez `exit` pour sortir du mode root
 
-## Curl et Git
+## 2 - Curl et Git
 
 Installez les packages suivants :
 ```bash
 sudo apt-get install curl git
 ```
 
-## Vim
+## 3 - Vim
 Création d'un fichier `.vimrc` :
 ```bash
 syntax on
@@ -34,7 +43,7 @@ set tabstop=4 shiftwidth=4 expandtab
 ```
 À mettre dans chaque répertoire personel ou l'on utilise vim (root compris)
 
-## SSH
+## 4 - SSH
 ### Changer le port ssh
 Éditez le fichier suivant : `/etc/ssh/sshd_config`
 Puis changer la ligne 5 **Port 22** avec le port souhaité.
@@ -45,7 +54,7 @@ sudo service ssh restart
 
 ### Utiliser une clé ssh
 
-## ZSH
+## 5 - ZSH
 
 Installation du package :
 ```bash
