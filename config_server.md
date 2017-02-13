@@ -1,11 +1,11 @@
 # Sommaire
 
- 1. [Gestion des droits](https://github.com/Helixar95/doc/blob/master/config_server.md#gestions-des-droits)
- 2. [Curl et Git](https://github.com/Helixar95/doc/blob/master/config_server.md#curl-et-git)
- 3. [Vim](https://github.com/Helixar95/doc/blob/master/config_server.md#vim)
- 4. [SSH](https://github.com/Helixar95/doc/blob/master/config_server.md#ssh)
- 5. [ZSH](https://github.com/Helixar95/doc/blob/master/config_server.md#zsh)
- 6. [thème Arc (not doing)](https://github.com/Helixar95/doc/blob/master/config_server.md#zsh)
+ 1. [Gestion des droits](https://github.com/Helixar95/doc/blob/master/config_server.md#1---gestions-des-droits)
+ 2. [Curl et Git](https://github.com/Helixar95/doc/blob/master/config_server.md#2---curl-et-git)
+ 3. [Vim](https://github.com/Helixar95/doc/blob/master/config_server.md#3---vim)
+ 4. [SSH](https://github.com/Helixar95/doc/blob/master/config_server.md#4---ssh)
+ 5. [ZSH](https://github.com/Helixar95/doc/blob/master/config_server.md#5---zsh)
+ 6. [thème Arc (not doing)](https://github.com/Helixar95/doc/blob/master/config_server.md#5---zsh)
 
 # Configuration du serveur
 ## 1 - Gestions des droits
