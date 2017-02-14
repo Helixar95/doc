@@ -1,110 +1,203 @@
-# Sommaire
+<html lang="en-us"><head>
+    <meta charset="UTF-8">
+    <title>Cayman theme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/cayman/assets/css/style.css?v=4188d7cda313cde09208de86a019440b06a290a2">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Cayman theme</h1>
+      <h2 class="project-tagline">Cayman is a clean, responsive theme for GitHub Pages.</h2>
+      
+        <a href="https://github.com/pages-themes/cayman" class="btn">View on GitHub</a>
+      
+      
+        <a href="https://github.com/pages-themes/cayman/zipball/master" class="btn">Download .zip</a>
+        <a href="https://github.com/pages-themes/cayman/tarball/master" class="btn">Download .tar.gz</a>
+      
+    </section>
 
- 1. [Gestion des droits](https://github.com/Helixar95/doc/blob/master/config_server.md#1---gestions-des-droits)
- 2. [Curl et Git](https://github.com/Helixar95/doc/blob/master/config_server.md#2---curl-et-git)
- 3. [Vim](https://github.com/Helixar95/doc/blob/master/config_server.md#3---vim)
- 4. [SSH](https://github.com/Helixar95/doc/blob/master/config_server.md#4---ssh)
- 5. [ZSH](https://github.com/Helixar95/doc/blob/master/config_server.md#5---zsh)
- 6. [thème Arc (not doing)](https://github.com/Helixar95/doc/blob/master/config_server.md#5---zsh)
+    <section class="main-content">
+      <p>Text can be <strong>bold</strong>, <em>italic</em>, or <del>strikethrough</del>.</p>
 
-# Configuration du serveur
-## 1 - Gestions des droits
-Passez en root avec la commande `su` puis tapez votre mot de passe root.
-ensuite mettez les dépendances à jour :
- `apt-get update && apt-get upgrade`
- 
-ajoutez la dépendance `sudo`
-```bash
-apt-get install sudo
-```
-puis tapez la commande suivante pour ajouter l’utilisateur au groupe sudo
-```bash
-adduser user sudo
-```
-ensuite tapez la commande `visudo` et ajoutez cette ligne en dessous de la ligne root
-```
-user ALL=(ALL:ALL) ALL
-```
-enregistrez le fichier puis tapez `exit` pour sortir du mode root
+<p><a href="another-page">Link to another page</a>.</p>
 
-## 2 - Curl et Git
+<p>There should be whitespace between paragraphs.</p>
 
-Installez les packages suivants :
-```bash
-sudo apt-get install curl git
-```
+<p>There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.</p>
 
-## 3 - Vim
-Création d'un fichier `.vimrc` :
-```bash
-syntax on
-set number
-set tabstop=4 shiftwidth=4 expandtab
-```
-À mettre dans chaque répertoire personel ou l'on utilise vim (root compris)
+<h1 id="header-1header-1"><a href="#header-1"></a>Header 1</h1>
 
-## 4 - SSH
-### Changer le port ssh
-Éditez le fichier suivant : `/etc/ssh/sshd_config`
-Puis changer la ligne 5 **Port 22** avec le port souhaité.
-Enregistrez le fichier et tapez la commande suivante
-```bash
-sudo service ssh restart
-```
+<p>This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.</p>
 
-### Utiliser une clé ssh
+<h2 id="header-2header-2"><a href="#header-2"></a>Header 2</h2>
 
-## 5 - ZSH
+<blockquote>
+  <p>This is a blockquote following a header.</p>
 
-Installation du package :
-```bash
-sudo apt-get install zsh
-```
+  <p>When something is important enough, you do it even if the odds are not in your favor.</p>
+</blockquote>
 
-Une fois l'installation terminé taper la commande `zsh`
-Appuyer sur `2` pour créer le fichier de configuration par défaut
+<h3 id="header-3header-3"><a href="#header-3"></a>Header 3</h3>
 
-### installation de oh-my-zsh
-[Github de oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="c1">// Javascript code with syntax highlighting.</span>
+<span class="kd">var</span> <span class="nx">fun</span> <span class="o">=</span> <span class="kd">function</span> <span class="nx">lang</span><span class="p">(</span><span class="nx">l</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">dateformat</span><span class="p">.</span><span class="nx">i18n</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'./lang/'</span> <span class="o">+</span> <span class="nx">l</span><span class="p">)</span>
+  <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
 
-Entrez la commande suivante :
-```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```
-Entrez votre mot de passe utilisateur quand on vous le demandera
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="c1"># Ruby code with syntax highlighting</span>
+<span class="no">GitHubPages</span><span class="o">::</span><span class="no">Dependencies</span><span class="p">.</span><span class="nf">gems</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">gem</span><span class="p">,</span> <span class="n">version</span><span class="o">|</span>
+  <span class="n">s</span><span class="p">.</span><span class="nf">add_dependency</span><span class="p">(</span><span class="n">gem</span><span class="p">,</span> <span class="s2">"= </span><span class="si">#{</span><span class="n">version</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre>
+</div>
 
-### Thème pure
-[Github du thème pure](https://github.com/sindresorhus/pure)
-*ATTENTION: Ce thème à besoin d'une font particulière de base*
+<h4 id="header-4header-4"><a href="#header-4"></a>Header 4</h4>
 
-Clonez le dépot du thème pure et copiez-y les fichiers :
-```bash
-git clone https://github.com/sindresorhus/pure.git
+<ul>
+  <li>This is an unordered list following a header.</li>
+  <li>This is an unordered list following a header.</li>
+  <li>This is an unordered list following a header.</li>
+</ul>
 
-cp pure/pure.plugin.zsh .oh-my-zsh/themes/pure.zsh-theme
-cp pure/async.zsh .oh-my-zsh/custom/async.zsh
-```
-Modifier votre fichier `.zshrc` en remplaçant le **ZSH_THEME=** :
-```bash
-ZSH_THEME="pure"
-```
-Une fois finis faite ceci pour reload la configuration :
-```bash
-source .zshrc
-```
+<h5 id="header-5header-5"><a href="#header-5"></a>Header 5</h5>
 
-### Plugin zsh-syntax-highlighting
-[Github du plugin](https://github.com/zsh-users/zsh-syntax-highlighting)
+<ol>
+  <li>This is an ordered list following a header.</li>
+  <li>This is an ordered list following a header.</li>
+  <li>This is an ordered list following a header.</li>
+</ol>
 
-Installer le plugin dans oh-my-zsh comme ceci :
-```bash
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-```
-Modifier votre fichier `.zshrc` et ajouter le plugin:
-```bash
-plugin=([plugins...] zsh-syntax-highlighting)
-```
-Une fois finis faite ceci pour reload la configuration :
-```bash
-source .zshrc
-```
+<h6 id="header-6header-6"><a href="#header-6"></a>Header 6</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">head1</th>
+      <th style="text-align: left">head two</th>
+      <th style="text-align: left">three</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">ok</td>
+      <td style="text-align: left">good swedish fish</td>
+      <td style="text-align: left">nice</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">out of stock</td>
+      <td style="text-align: left">good and plenty</td>
+      <td style="text-align: left">nice</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ok</td>
+      <td style="text-align: left">good <code class="highlighter-rouge">oreos</code></td>
+      <td style="text-align: left">hmm</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ok</td>
+      <td style="text-align: left">good <code class="highlighter-rouge">zoute</code> drop</td>
+      <td style="text-align: left">yumm</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="theres-a-horizontal-rule-below-this">There’s a horizontal rule below this.</h3>
+
+<hr>
+
+<h3 id="here-is-an-unordered-list">Here is an unordered list:</h3>
+
+<ul>
+  <li>Item foo</li>
+  <li>Item bar</li>
+  <li>Item baz</li>
+  <li>Item zip</li>
+</ul>
+
+<h3 id="and-an-ordered-list">And an ordered list:</h3>
+
+<ol>
+  <li>Item one</li>
+  <li>Item two</li>
+  <li>Item three</li>
+  <li>Item four</li>
+</ol>
+
+<h3 id="and-a-nested-list">And a nested list:</h3>
+
+<ul>
+  <li>level 1 item
+    <ul>
+      <li>level 2 item</li>
+      <li>level 2 item
+        <ul>
+          <li>level 3 item</li>
+          <li>level 3 item</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>level 1 item
+    <ul>
+      <li>level 2 item</li>
+      <li>level 2 item</li>
+      <li>level 2 item</li>
+    </ul>
+  </li>
+  <li>level 1 item
+    <ul>
+      <li>level 2 item</li>
+      <li>level 2 item</li>
+    </ul>
+  </li>
+  <li>level 1 item</li>
+</ul>
+
+<h3 id="small-image">Small image</h3>
+
+<p><img src="https://assets-cdn.github.com/images/icons/emoji/octocat.png" alt=""></p>
+
+<h3 id="large-image">Large image</h3>
+
+<p><img src="https://guides.github.com/activities/hello-world/branching.png" alt=""></p>
+
+<h3 id="definition-lists-can-be-used-with-html-syntax">Definition lists can be used with HTML syntax.</h3>
+
+<dl>
+<dt>Name</dt>
+<dd>Godzilla</dd>
+<dt>Born</dt>
+<dd>1952</dd>
+<dt>Birthplace</dt>
+<dd>Japan</dd>
+<dt>Color</dt>
+<dd>Green</dd>
+</dl>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>The final element.
+</code></pre>
+</div>
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/pages-themes/cayman">cayman</a> is maintained by <a href="https://github.com/pages-themes">pages-themes</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </section>
+
+    
+  
+
+</body></html>
